@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+
     <list default="true" id="417e7459-3abf-4bbc-bfb5-d8275ccfcbda" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -8,11 +9,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/restproject/src/main/java/rest/web/controller/SzaboMateController.java">
           <provider selected="true" editor-type-id="text-editor">
+
             <state relative-caret-position="374">
               <caret line="22" selection-start-line="22" selection-end-line="22" />
               <folding>
@@ -23,6 +26,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+
         <entry file="file://$PROJECT_DIR$/restproject/src/main/java/rest/web/controller/OlaruAlexandraController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
@@ -34,6 +38,7 @@
           </provider>
         </entry>
       </file>
+
     </leaf>
   </component>
   <component name="Git.Settings">
