@@ -9,10 +9,10 @@ import rest.entity.User;
 import java.time.LocalDateTime;
 
 @RestController
-@RequestMapping("/api/szm")
+@RequestMapping("/api/ma")
 
 @Slf4j
-public class SzaboMateController {
+public class MicuraAdamController {
 
     @GetMapping("")
     public User getUser() {
