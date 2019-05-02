@@ -89,6 +89,13 @@ public class UserController {
         log.info("process=get-users");
         return new User("Czegledi Attila", "czegiati@gmail.com", LocalDateTime.now(), LocalDateTime.now());
     }
+
+    @GetMapping("/tb")
+    public User getTothBence() {
+        log.info("process=get-users");
+        return new User("Toth Bence", "putyesz@mailbox.unideb.hu", LocalDateTime.now(), LocalDateTime.now());
+    }
+
     @GetMapping("/print")
     public String print(){
         System.out.println("Szabó Máté 12:44");
@@ -99,6 +106,8 @@ public class UserController {
         System.out.println("Szabó Máté, Filep Kornel");
         System.out.println("Szabó Máté 12:55");
         System.out.println("Jeszy a legjobb");
+        System.out.println("Tóth Bence 13:16");
+
         return "Szabó Máté, Filep Kornel, Sass Tamás";
 
     }
