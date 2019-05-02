@@ -100,8 +100,9 @@ public class UserController {
         System.out.println("Szabó Máté 12:44");
         System.out.println("Szabó Máté 12:46");
         System.out.println("Szabó Máté 12:48");
-        System.out.println("get rekt");
 
+        System.out.println("Trololo");
+>>>>>>> 76260e1fc870649ac5eb52599697131f151730ef
         System.out.println("Szabó Máté");
         System.out.println("Szabó Máté, Filep Kornel");
         System.out.println("Szabó Máté 12:55");
