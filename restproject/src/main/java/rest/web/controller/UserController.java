@@ -65,13 +65,20 @@ public class UserController {
         return new User("Szabó Máté", "szabo.mate@inf.unideb.hu", LocalDateTime.now(), LocalDateTime.now());
     }
 
+    @GetMapping("/kf")
+    public User getKornel() {
+        log.info("process=get-users");
+        return new User("Filep Kornel", "kornel.filep@gmail.com", LocalDateTime.now(), LocalDateTime.now());
+    }
+
     @GetMapping("/print")
     public String print(){
         System.out.println("Szabó Máté 12:44");
         System.out.println("Szabó Máté 12:46");
         System.out.println("Szabó Máté 12:48");
 
-        return "Szabó Máté 12:44";
+        System.out.println("Szabó Máté");
+        return "Szabó Máté, Filep Kornel";
     }
 
 }
