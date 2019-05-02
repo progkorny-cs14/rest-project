@@ -1,11 +1,11 @@
 package rest.web.controller;
 
-import rest.entity.User;
-import rest.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import rest.entity.User;
+import rest.service.UserService;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -35,8 +35,8 @@ public class UserController {
     public ResponseEntity<User> getUser(@PathVariable Long id) {
         log.info("process=get-user, user_id={}", id);
         Optional<User> user = userService.getUserById(id);
-        return user.map( u -> ResponseEntity.ok(u))
-                   .orElse(ResponseEntity.notFound().build());
+        return user.map(u -> ResponseEntity.ok(u))
+                .orElse(ResponseEntity.notFound().build());
     }
 
     @PostMapping("/users")
@@ -71,16 +71,11 @@ public class UserController {
         return new User("Filep Kornel", "kornel.filep@gmail.com", LocalDateTime.now(), LocalDateTime.now());
     }
 
-
-
     @GetMapping("/oa")
     public User getUserOa() {
->>>>>>> oa
         log.info("process=get-users");
         return new User("Olaru Alexandra", "olaru.alexa@hotmail.com", LocalDateTime.now(), LocalDateTime.now());
     }
-
-
 
     @GetMapping("/st")
     public User getSass() {
@@ -100,16 +95,15 @@ public class UserController {
         return new User("Czegledi Attila", "czegiati@gmail.com", LocalDateTime.now(), LocalDateTime.now());
     }
 
->>>>>>> oa
     @GetMapping("/print")
-    public String print(){
+    public String print() {
+
+        //ConflictZone
         System.out.println("Szabó Máté 12:44");
         System.out.println("Szabó Máté 12:46");
         System.out.println("Szabó Máté 12:48 sdfghjkl");
         System.out.println("Szabó Máté 12:48 asd");
-
         System.out.println("Trololo");
->>>>>>> 76260e1fc870649ac5eb52599697131f151730ef
         System.out.println("Szabó Máté");
         System.out.println("Szabó Máté, Filep Kornel");
         System.out.println("Szabó Máté 12:55");
