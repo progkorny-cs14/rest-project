@@ -71,6 +71,12 @@ public class UserController {
         return new User("Filep Kornel", "kornel.filep@gmail.com", LocalDateTime.now(), LocalDateTime.now());
     }
 
+    @GetMapping("/oa")
+    public User getUserOA() {
+        log.info("process=get-users");
+        return new User("Olaru Alexandra", "olaru.alexa@hotmail.com", LocalDateTime.now(), LocalDateTime.now());
+    }
+
     @GetMapping("/print")
     public String print(){
         System.out.println("Szabó Máté 12:44");
