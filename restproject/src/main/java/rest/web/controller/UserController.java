@@ -71,6 +71,17 @@ public class UserController {
         return new User("Filep Kornel", "kornel.filep@gmail.com", LocalDateTime.now(), LocalDateTime.now());
     }
 
+
+
+    @GetMapping("/oa")
+    public User getUserOa() {
+>>>>>>> oa
+        log.info("process=get-users");
+        return new User("Olaru Alexandra", "olaru.alexa@hotmail.com", LocalDateTime.now(), LocalDateTime.now());
+    }
+
+
+
     @GetMapping("/st")
     public User getSass() {
         log.info("process=get-users");
@@ -83,31 +94,26 @@ public class UserController {
         return new User("Jakubát Attila", "l4tabar@gmail.com", LocalDateTime.now(), LocalDateTime.now());
     }
 
-
     @GetMapping("/cza")
     public User getCzeglediAttila() {
         log.info("process=get-users");
         return new User("Czegledi Attila", "czegiati@gmail.com", LocalDateTime.now(), LocalDateTime.now());
     }
 
-    @GetMapping("/tb")
-    public User getTothBence() {
-        log.info("process=get-users");
-        return new User("Toth Bence", "putyesz@mailbox.unideb.hu", LocalDateTime.now(), LocalDateTime.now());
-    }
-
+>>>>>>> oa
     @GetMapping("/print")
     public String print(){
         System.out.println("Szabó Máté 12:44");
         System.out.println("Szabó Máté 12:46");
         System.out.println("Szabó Máté 12:48");
+
         System.out.println("Trololo");
+>>>>>>> 76260e1fc870649ac5eb52599697131f151730ef
         System.out.println("Szabó Máté");
         System.out.println("Szabó Máté, Filep Kornel");
         System.out.println("Szabó Máté 12:55");
         System.out.println("Jeszy a legjobb");
-        System.out.println("Tóth Bence 13:16");
-
+        System.out.println("Hello darkness my old friend");
         return "Szabó Máté, Filep Kornel, Sass Tamás";
 
     }
