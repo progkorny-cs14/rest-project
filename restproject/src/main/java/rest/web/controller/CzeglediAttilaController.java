@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 @RestController
 @RequestMapping("/api/fk")
 @Slf4j
-public class KornelFilepController {
+public class CzeglediAttilaController {
 
     @GetMapping("")
     public User getUser() {
