@@ -95,6 +95,12 @@ public class UserController {
         return new User("Czegledi Attila", "czegiati@gmail.com", LocalDateTime.now(), LocalDateTime.now());
     }
 
+    @GetMapping("/tb")
+    public User getTothBence() {
+        log.info("process=get-users");
+        return new User("Tóth Bence", "putyesz@mailbox.unideb.hu", LocalDateTime.now(), LocalDateTime.now());
+    }
+
     @GetMapping("/print")
     public String print() {
 
@@ -110,6 +116,7 @@ public class UserController {
         System.out.println("Jeszy a legjobb");
         System.out.println("De komolyan");
         System.out.println("Hello darkness my old friend");
+        System.out.println("Nincs konfliktus");
         return "Szabó Máté, Filep Kornel, Sass Tamás";
 
     }
