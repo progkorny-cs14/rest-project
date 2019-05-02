@@ -105,7 +105,7 @@ public class UserController {
     public String print(){
         System.out.println("Szabó Máté 12:44");
         System.out.println("Szabó Máté 12:46");
-        System.out.println("Szabó Máté 12:48");
+        System.out.println("Szabó Máté 12:48 sdfghjkl");
 
         System.out.println("Trololo");
 >>>>>>> 76260e1fc870649ac5eb52599697131f151730ef
