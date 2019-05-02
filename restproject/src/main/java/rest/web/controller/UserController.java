@@ -64,6 +64,11 @@ public class UserController {
         log.info("process=get-users");
         return new User("Szabó Máté", "szabo.mate@inf.unideb.hu", LocalDateTime.now(), LocalDateTime.now());
     }
+ @GetMapping("/aa")
+    public User getAlex() {
+        log.info("process=get-users");
+        return new User("Abai Alex", "abaialex2244@gmail.com", LocalDateTime.now(), LocalDateTime.now());
+    }
 
     @GetMapping("/kf")
     public User getKornel() {
@@ -74,7 +79,8 @@ public class UserController {
     @GetMapping("/print")
     public String print(){
         System.out.println("Szabó Máté");
-        return "Szabó Máté, Filep Kornel";
+System.out.println("Abai Alex");
+        return "Abai Alex";
     }
 
 }
