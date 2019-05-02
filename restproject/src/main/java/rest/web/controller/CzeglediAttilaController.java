@@ -9,14 +9,13 @@ import rest.entity.User;
 import java.time.LocalDateTime;
 
 @RestController
-@RequestMapping("/api/st")
+@RequestMapping("/api/fk")
 @Slf4j
-public class SassTamasController {
+public class CzeglediAttilaController {
 
     @GetMapping("")
     public User getUser() {
         log.info("process=get-users");
-        return new User("Sass Tamás", "sasstomi98@gmail.com", LocalDateTime.now(), LocalDateTime.now());
+        return new User("CzeglediAttila", "czegiati@gmail.com", LocalDateTime.now(), LocalDateTime.now());
     }
-
 }
