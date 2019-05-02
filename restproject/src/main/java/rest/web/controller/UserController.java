@@ -94,7 +94,6 @@ public class UserController {
         return new User("Jakubát Attila", "l4tabar@gmail.com", LocalDateTime.now(), LocalDateTime.now());
     }
 
-
     @GetMapping("/cza")
     public User getCzeglediAttila() {
         log.info("process=get-users");
@@ -114,6 +113,7 @@ public class UserController {
         System.out.println("Szabó Máté, Filep Kornel");
         System.out.println("Szabó Máté 12:55");
         System.out.println("Jeszy a legjobb");
+        System.out.println("Hello darkness my old friend");
         return "Szabó Máté, Filep Kornel, Sass Tamás";
 
     }
