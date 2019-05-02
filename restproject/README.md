@@ -1,7 +1,10 @@
-# restproject 1.1 master
+# restproject 2.0
+
+Első readme sor.
 
 
-http://localhost:8080/swagger-ui.html
+
+http://localhost:8080/api/
 
 
 `./mvnw compile flyway:migrate`
