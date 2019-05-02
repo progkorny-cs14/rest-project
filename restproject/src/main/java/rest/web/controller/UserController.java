@@ -82,6 +82,7 @@ public class UserController {
         System.out.println("Szabó Máté 12:44");
         System.out.println("Szabó Máté 12:46");
         System.out.println("Szabó Máté 12:48");
+        System.out.println("get rekt");
 
         System.out.println("Szabó Máté");
         return "Szabó Máté, Filep Kornel";
