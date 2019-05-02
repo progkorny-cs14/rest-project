@@ -71,10 +71,16 @@ public class UserController {
         return new User("Filep Kornel", "kornel.filep@gmail.com", LocalDateTime.now(), LocalDateTime.now());
     }
 
+    @GetMapping("/tb")
+    public User getBence() {
+        log.info("process=get-users");
+        return new User("Toth Bence", "putyesz@mailbox.unideb.com", LocalDateTime.now(), LocalDateTime.now());
+    }
+
     @GetMapping("/print")
     public String print(){
         System.out.println("Szabó Máté");
-        return "Szabó Máté, Filep Kornel";
+        return "Szabó Máté, Filep Kornel, Tóth Bence";
     }
 
 }
