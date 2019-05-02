@@ -57,9 +57,6 @@ public class UserController {
     public void deleteUser(@PathVariable Long id) {
         log.info("process=delete-user, user_id={}", id);
         userService.deleteUser(id);
-
-
-
     }
 
     @GetMapping("/szm")
@@ -82,6 +79,7 @@ public class UserController {
 
         System.out.println("Szabó Máté");
         System.out.println("Szabó Máté, Filep Kornel");
+        System.out.println("Szabó Máté 12:55");
         return "Szabó Máté, Filep Kornel";
     }
 
